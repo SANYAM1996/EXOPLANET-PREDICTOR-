@@ -1,0 +1,27 @@
+Decision Tree Algorithm,Accuracy,F1-score,Precision
+Planet-1,0.92,0.93,0.96
+Planet-2,0.92,0.89,0.86
+Planet-3,0.92,0.93,0.91
+Planet-4,0.92,0.91,0.87
+,,,
+,,,
+,,,
+Random Forest Algorithm,,,
+Planet-1,0.96,0.96,0.96
+Planet-2,0.96,0.93,0.93
+Planet-3,0.96,0.97,0.97
+Planet-4,0.96,0.98,0.98
+,,,
+,,,
+XG-Boost,,,
+Planet-1,0.95,0.96,0.96
+Planet-2,0.95,0.92,0.91
+Planet-3,0.95,0.95,0.94
+Planet-4,0.95,0.99,0.99
+,,,
+,,,
+ADA Boost,,,
+Planet-1,0.92,0.93,0.96
+Planet-2,0.92,0.89,0.86
+Planet-3,0.92,0.92,0.9
+Planet-4,0.92,0.91,0.86

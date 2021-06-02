@@ -1,0 +1,99 @@
+<!-- This HTML code is used for providing the front end of the application while deploying on the cloud-->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Planet Prediction</title>
+  </head>
+
+  <body>
+    <h1><div style="text-align:center"><font color="blue"> Exoplanet Predictor</font></div></h1>
+    <hr>
+    </br>
+    <h2><div style="text-align:center">Enter the Required Values to get the number of possible Exoplanets</div></h2>
+    </br>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-6'>
+          <form method="POST" action="/predict">
+            <div class="form-group">
+              <label for="default_flag"><p class="font-weight-bold">Planet parameter</p></label>
+              <input type="text" name="default_flag">
+              <small id="planetparameter" class="form-text text-muted">Enter 1 for the Planet Parameter</small>
+              </div>
+
+              <div class="form-group">
+                <label for="sy_snum"><p class="font-weight-bold">Number of stars</p></label>
+                <input type="text" name="sy_snum">
+                <small id="star" class="form-text text-muted">Enter the value from 1 to 4</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="discoverymethod"><p class="font-weight-bold">Discovery Method</p></label>
+                  <input type="text" name="discoverymethod">
+                  <small id="discmethod" class="form-text text-muted">Enter 8 for Radial Velocity Method, Enter 9 for Transit Method</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="pl_orbper"><p class="font-weight-bold">Planet orbital period days</p></label>
+                    <input type="text" name="pl_orbper">
+                    <small id="plorb" class="form-text text-muted">Enter the value upto 3 digit decimal places ranges from 200 to 1000</small>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="pl_orbsmax"><p class="font-weight-bold">Planet orbital semi major axis</p></label>
+                      <input type="text" name="pl_orbsmax">
+                      <small id="plorbsmax" class="form-text text-muted">Enter the value upto 2 decimal places ranges from 1.20 to 1.80</small>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="pl_msinie"><p class="font-weight-bold">Planet mass with respect to earth mass</p></label>
+                        <input type="text" name="pl_msinie">
+                        <small id="plmass" class="form-text text-muted">Enter the value upto 4 decimal places ranges from 2000 to 6000</small>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="pl_orbeccen"><p class="font-weight-bold">Planet orbital Eccentricity</p></label>
+                        <input type="text" name="pl_orbeccen">
+                        <small id="plecc" class="form-text text-muted">Enter the value upto 6 decimal places ranges from 0.01 to 0.8</small>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="st_teff"><p class="font-weight-bold">Star Effective Temperature</p></label>
+                        <input type="text" name="st_teff">
+                        <small id="stareff" class="form-text text-muted">Enter the value from 500 to 5000 </small>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="st_rad"><p class="font-weight-bold">Star Radius</p></label>
+                        <input type="text" name="st_rad">
+                        <small id="starrad" class="form-text text-muted">Enter the value from 1 to 50</small>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="st_mass"><p class="font-weight-bold">Star mass</p></label>
+                        <input type="text" name="st_mass">
+                        <small id="stmass" class="form-text text-muted">Enter the value upto 2 decimal places ranges from 0 to 20</small>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="st_logg"><p class="font-weight-bold">Stellar Surface Gravity</p></label>
+                        <input type="text" name="st_logg">
+                        <small id="starlog" class="form-text text-muted">Enter the value upto 2 decimal places ranges from 1.0 to 8.0</small>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="sy_dist"><p class="font-weight-bold">Distance in Parsec</p></label>
+                        <input type="text" name="sy_dist">
+                        <small id="dist" class="form-text text-muted">Enter the value upto 4 deciaml places ranges from 90 to 8000</small>
+                        </div>
+
+                        <input class='btn btn-primary' type='submit' value='Submit'>
+            </form>
+
+          </div>
+          </div>
+          </div>
+  </body>
+
+</html>
